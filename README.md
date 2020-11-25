@@ -4,13 +4,20 @@
 - bash 
 - gdrive (https://github.com/prasmussen/gdrive)
 
-## commands
+## Commands
 
 - `lf` : list last n files 
 
-### Google Drive 
+-*Google Drive*
 - `glink` 	: turn ID in into gdrive link 
 - `glist` 	: list files from gdrive 
 - `gshare` 	: share file to gdrive and share link + copy to clipboard 
 
+## To Be Added
 
+- clockify
+- todoist
+- gitlab github 
+- irc mattermost slack 
+- tmux
+- i3
