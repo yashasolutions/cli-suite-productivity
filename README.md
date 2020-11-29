@@ -13,6 +13,9 @@
 - `glist` 	: list files from gdrive 
 - `gshare` 	: share file to gdrive and share link + copy to clipboard 
 
+-*Gmail*
+- `gmail` 	: send mail using gmail or (or any SMTP server) 
+
 ## To Be Added
 
 - clockify
