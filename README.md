@@ -13,20 +13,28 @@ There is a great bunch of tools out there, but somehow I couldn't find an easy w
 - `lf` : list last n files 
 - `noblank` disable your screen from going blacn 
 
--*Google Drive*
+**Google Drive**
 - `glink` 	: turn ID in into gdrive link 
 - `glist` 	: list files from gdrive 
 - `gshare` 	: share file to gdrive and share link + copy to clipboard 
 
--*Gmail*
+
+**Gmail**
 - `gmail` 	: send mail using gmail or (or any SMTP server) 
 - `gcompose` : integrate with [goobook](https://pypi.org/project/goobook/)
 
--*GitLab*
-- `gissues` : generate gitlab issue templates in your local repo 
-- *to add soon* : a few glab shortcuts
 
-- *Content creation*
+**Code stuff**
+- `gissues` : generate gitlab issue templates in your local repo 
+- `codefinder` : lazy grep 
+- `push` : lazy git command to push changes on branch 
+- *to be added soon* : a few glab shortcuts
+
+
+**Content creation**
+- `screengrab` : screencast your screen, and save into a new mp4 (dependency on ffmpeg)
+- `idea` : idea managers - capture ideas, review ideas, edit and keep working on ideas 
+
 
 ## To Be Added
 
