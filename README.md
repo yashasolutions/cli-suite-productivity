@@ -1,8 +1,12 @@
-# Missing productivity command for the shell
+# Handy lil' scripts for the day-to-day 
+
+There is a great bunch of tools out there, but somehow I couldn't find an easy way to get some regular tasks done, so I started to  compile some scripts - quite basic but honesly useful. 
 
 ## dependencies
-- bash 
-- gdrive (https://github.com/prasmussen/gdrive)
+- bash (yep, I guess a zsh version might be good for some folks out there, I just dont use zsh.)
+- [gdrive](https://github.com/prasmussen/gdrive)
+- [fzf](https://github.com/junegunn/fzf) 
+
 
 ## Commands
 
@@ -15,6 +19,7 @@
 
 -*Gmail*
 - `gmail` 	: send mail using gmail or (or any SMTP server) 
+- `gcompose` 
 
 ## To Be Added
 
