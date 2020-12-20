@@ -11,7 +11,7 @@ There is a great bunch of tools out there, but somehow I couldn't find an easy w
 ## Commands
 
 - `lf` : list last n files 
-- `noblank` disable your screen from going blacn 
+- `noblank` disable your screen from going blank 
 
 **Google Drive**
 - `glink` 	: turn ID in into gdrive link 
@@ -33,14 +33,10 @@ There is a great bunch of tools out there, but somehow I couldn't find an easy w
 
 **Content creation**
 - `screengrab` : screencast your screen, and save into a new mp4 (dependency on ffmpeg)
-- `idea` : idea managers - capture ideas, review ideas, edit and keep working on ideas 
+- `idea` : ideas manager - capture ideas, review ideas, edit and keep working on ideas 
 
 
 ## To Be Added
 
 - clockify
 - todoist
-- gitlab github 
-- irc mattermost slack 
-- tmux
-- i3
