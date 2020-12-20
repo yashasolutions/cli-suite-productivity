@@ -11,6 +11,7 @@ There is a great bunch of tools out there, but somehow I couldn't find an easy w
 ## Commands
 
 - `lf` : list last n files 
+- `noblank` disable your screen from going blacn 
 
 -*Google Drive*
 - `glink` 	: turn ID in into gdrive link 
@@ -19,7 +20,13 @@ There is a great bunch of tools out there, but somehow I couldn't find an easy w
 
 -*Gmail*
 - `gmail` 	: send mail using gmail or (or any SMTP server) 
-- `gcompose` 
+- `gcompose` : integrate with [goobook](https://pypi.org/project/goobook/)
+
+-*GitLab*
+- `gissues` : generate gitlab issue templates in your local repo 
+- *to add soon* : a few glab shortcuts
+
+- *Content creation*
 
 ## To Be Added
 
