@@ -10,15 +10,22 @@ newidea(){
  vi $THOUGHTSDIR/$1
 }
 
-listidea(){
+editidea(){
 	vi $THOUGHTSDIR/$(ls -t $THOUGHTSDIR | fzf)
+}
+listidea(){
+	ls -t $THOUGHTSDIR | fzf
 }
  
 
 while [[ "$#" -gt 0 ]]; do
     case $1 in
-			-n|new) newidea $2; exit; shift ;;
-      -l|list)listidea;
+			-n|new) 
+				newidea $2; exit; shift ;;
+			-e|edit) 
+				editidea;exit;;
+      -l|list)
+				listidea;
 					shift;
 					exit 
 					;;
