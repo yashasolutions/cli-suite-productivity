@@ -9,3 +9,7 @@ do
 	newname=$(echo $i | cut -d"/" -f2 | cut -d"." -f1) 
 	cp $i $HOME/$INSTALL_DIR/$newname 
 done
+
+SHARE_DIR=".local/share/"
+
+cp -r share/* $HOME/$SHARE_DIR
