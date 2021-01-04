@@ -12,17 +12,20 @@ newblog(){
 }
 
 editblog(){
-	vi $BLOGDIR/$(grep -rl "type: draft" $BLOGDIR/*.md  | fzf)
+	cd $BLOGDIR 
+	vi $(grep -rl "type: draft" *.md  | fzf)
 }
 
 listblog(){
-	ls -t $BLOGDIR/*.md
+	cd $BLOGDIR
+	ls -t1 *.md
 }
  
 viewblog(){
+	cd $BLOGDIR 
 	while true
 	do
-		less $BLOGDIR/$(grep -rl "type: draft" $BLOGDIR/*.md | fzf)
+		less $(grep -rl "type: draft" *.md | fzf)
 		sleep 1
 	done
 }
