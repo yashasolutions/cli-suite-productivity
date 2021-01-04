@@ -15,7 +15,7 @@ editthread(){
 }
 
 listthread(){
-	ls -t $THREADSDIR 
+	ls -t1 $THREADSDIR 
 }
  
 viewthread(){
