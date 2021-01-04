@@ -6,6 +6,7 @@ DEST=~/Videos/youtube
 #OPTIONS
 OVERWRITEFILEIFFOUND=-y 
 UPPERLEFTCORNEROF=-i
+MOUSE=0 #0 or 1 
 
 # Screen in the middle 
 RECDISPLAY=:1+1280,0
@@ -23,6 +24,7 @@ BASENAME=$1
 ## Start Recording
 ffmpeg $OVERWRITEFILEIFFOUND \
 -video_size $RESOLUTION \
+-draw_mouse $MOUSE \
 -framerate 30 -f x11grab $UPPERLEFTCORNEROF $RECDISPLAY \
 -f pulse -ac 2 -i $MIC \
 $DEST/$BASENAME-`date '+%Y-%m-%d_%H-%M-%S'`.mp4 \
