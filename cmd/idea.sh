@@ -13,13 +13,23 @@ newidea(){
 editidea(){
 	vi $THOUGHTSDIR/$(ls -t $THOUGHTSDIR | fzf)
 }
+
 listidea(){
-	ls -t $THOUGHTSDIR | fzf
+	ls -t $THOUGHTSDIR 
 }
  
+viewidea(){
+	while true
+	do
+		less $THOUGHTSDIR/$(ls -t $THOUGHTSDIR | fzf)
+		sleep 1
+	done
+}
 
 while [[ "$#" -gt 0 ]]; do
     case $1 in
+			-v|view) 
+				viewidea ; exit;;
 			-n|new) 
 				newidea $2; exit; shift ;;
 			-e|edit) 
