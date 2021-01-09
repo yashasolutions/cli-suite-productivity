@@ -15,7 +15,7 @@ editidea(){
 }
 
 listidea(){
-	ls -t $THOUGHTSDIR 
+	ls -t1 $THOUGHTSDIR 
 }
  
 viewidea(){
