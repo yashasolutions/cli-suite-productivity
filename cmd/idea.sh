@@ -10,6 +10,11 @@ newidea(){
  vi $THOUGHTSDIR/$1
 }
 
+ideatopost(){
+	POSTNAME=$(ls -t $THOUGHTSDIR | fzf)
+  cp $BLOGDIR/starter.tmpl $BLOGDIR/$POSTNAME.md
+	cat $THOUGHTSDIR/$POSTNAME >> $BLOGDIR/$POSTNAME.md
+}
 editidea(){
 	vi $THOUGHTSDIR/$(ls -t $THOUGHTSDIR | fzf)
 }
@@ -28,6 +33,8 @@ viewidea(){
 
 while [[ "$#" -gt 0 ]]; do
     case $1 in
+			-p|post) 
+				ideatopost ; exit;;
 			-v|view) 
 				viewidea ; exit;;
 			-n|new) 

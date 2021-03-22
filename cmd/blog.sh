@@ -25,7 +25,7 @@ viewblog(){
 	cd $BLOGDIR 
 	while true
 	do
-		less $(grep -rl "type: draft" *.md | fzf)
+		view -R $(grep -rl "type: draft" *.md | fzf)
 		sleep 1
 	done
 }
@@ -48,3 +48,4 @@ while [[ "$#" -gt 0 ]]; do
     shift
 done
 
+viewblog

@@ -16,7 +16,7 @@ while [[ "$#" -gt 0 ]]; do
         w|web) glab issue view -w $2 -R $REPO; exit;;
         a|add) glab issue create -t $2 -d "" --no-editor -R $REPO; exit; shift;;
         i|interactive) glab issue create ; exit; shift;;
-        *) echo "Unknown parameter passed: $1"; exit 1 ;;
+        *) echo "Unknown parameter passed: $1"; echo "try l/v/c/w/a/i " exit 1 ;;
     esac
     shift
 done

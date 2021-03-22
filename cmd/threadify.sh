@@ -24,6 +24,8 @@ do
 	else
 		if [ $LINESINTWEET -eq 0 ]; then
 			TWEET="$line"
+		elif [ "$line" == ".." ]; then
+			TWEET=$(printf "$TWEET\n\n")
 		else
 			TWEET=$(printf "$TWEET\n$line")
 		fi

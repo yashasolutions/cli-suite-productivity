@@ -14,6 +14,10 @@ editthread(){
 	vi $THREADSDIR/$(ls -t $THREADSDIR | fzf)
 }
 
+postthread(){
+	threadify $THREADSDIR/$(ls -t $THREADSDIR | fzf)
+}
+
 listthread(){
 	ls -t1 $THREADSDIR 
 }
@@ -28,6 +32,8 @@ viewthread(){
 
 while [[ "$#" -gt 0 ]]; do
     case $1 in
+			-p|post) 
+				postthread ; exit;;
 			-v|view) 
 				viewthread ; exit;;
 			-n|new) 
