@@ -28,15 +28,10 @@ There is a great bunch of tools out there, but somehow I couldn't find an easy w
 - `gissues` : generate gitlab issue templates in your local repo 
 - `codefinder` : lazy grep 
 - `push` : lazy git command to push changes on branch 
-- *to be added soon* : a few glab shortcuts
-
 
 **Content creation**
 - `screengrab` : screencast your screen, and save into a new mp4 (dependency on ffmpeg)
 - `idea` : ideas manager - capture ideas, review ideas, edit and keep working on ideas 
+- `smolimg` : optimize images for the web
 
 
-## To Be Added
-
-- clockify
-- todoist
