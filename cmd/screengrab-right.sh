@@ -9,19 +9,20 @@ UPPERLEFTCORNEROF=-i
 MOUSE=1 #0 or 1 
 
 # Screen in the middle 
-RECDISPLAY=:1+4480,0
-RESOLUTION=1440x900
+RECDISPLAY=:1+2560,0
+#RESOLUTION=1440x900
+RESOLUTION=1280x1024
 
 # get list of your mics with `pactl list` - and more precisely: 
 # pactl list | grep -A2 'Source #' | grep 'Name: ' | cut -d" " -f2
 MIC="alsa_input.usb-C-Media_Electronics_Inc._USB_Advanced_Audio_Device-00.analog-stereo"
 
 # dynamic name - basically the topic of your recording
-BASENAME=$1 
+BASENAME=$1
 [ "$#" -eq 0 ] && BASENAME="screen"
 
 
-##-vf setpts=N/FR/TB \
+##vf setpts=N/FR/TB \
 ## Start Recording
 ffmpeg $OVERWRITEFILEIFFOUND \
 -video_size $RESOLUTION \

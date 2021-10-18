@@ -10,7 +10,7 @@ MOUSE=0 #0 or 1
 
 # Screen in the middle 
 RECDISPLAY=:1+1280,0
-RESOLUTION=1920x1080
+RESOLUTION=1280x720
 
 # get list of your mics with `pactl list` - and more precisely: 
 # pactl list | grep -A2 'Source #' | grep 'Name: ' | cut -d" " -f2
